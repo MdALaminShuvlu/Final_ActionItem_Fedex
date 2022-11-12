@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Automation Test Suite" >
+
+    <test name="FedExTest">
+
+        <classes>
+
+            <class name="FedEx_ActionItem"/>
+
+        </classes>
+
+    </test>
+
+</suite>
