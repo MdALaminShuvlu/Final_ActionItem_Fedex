@@ -11,7 +11,7 @@ public class FedEx_ActionItem extends Reusable_Annotations{
         //click on Browse service
         Reusable_Actions.clickAction(driver,"//*[@title= 'Browse Services']",logger,"Browse service");
 
-    }//end of test case 1
+    }//end of test case 1//
 
     @Test(dependsOnMethods ="TC1_Home_Page" )
     public void TC2_PrintService_Page() throws InterruptedException {
@@ -73,6 +73,7 @@ public class FedEx_ActionItem extends Reusable_Annotations{
         @Test(dependsOnMethods ="TC6_CaptureAddress")
         public void TC7_ContactInfo() {
             //First name
+            Reusable_Actions.sendKeysAction(driver, "//*[@id='contact-fname']", "MD ALAMIN", logger, "First name");
             Reusable_Actions.sendKeysAction(driver, "//*[@id='contact-fname']", "MD ALAMIN", logger, "First name");
             //last name
             Reusable_Actions.sendKeysAction(driver, "//*[@class='contact-lname']", "Shuvlu", logger, "last name");
